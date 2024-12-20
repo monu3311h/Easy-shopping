@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid p-0">
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="height: calc(100vh - 56px);">
+        <div class="carousel-inner" style="height: 100%;">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="height: 100%;">
+                <img src="/static/images/sale.jpg" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: 100%;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Our Shop</h5>
+                    <p>Discover the best products here.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="height: 100%;">
+                <img src="/static/images/sale2.jpg" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 100%;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Great Deals Await</h5>
+                    <p>Find everything you need at unbeatable prices.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+{% endblock %}

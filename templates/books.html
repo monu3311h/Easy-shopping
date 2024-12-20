@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mt-5">
+        <h2 class="text-center fw-bold">Books</h2>
+        <div class="row mt-4">
+            {% for book in books %}
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{{ book.image }}" class="card-img-top img-fluid" style="object-fit: contain;" alt="{{ book.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ book.name }}</h5>
+                        <p class="card-text text-muted">${{ book.price }}</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+           {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}
