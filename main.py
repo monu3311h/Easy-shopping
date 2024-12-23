@@ -118,5 +118,11 @@ def books():
     products = Books.query.all()
     return render_template('books.html', books=products)
 
+# Creating Custom error pages
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
